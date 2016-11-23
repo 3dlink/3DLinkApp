@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+   <button ion-button menuToggle>
+     <ion-icon name="menu"></ion-icon>
+   </button>
+   <ion-title>Home</ion-title>
+ </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home-slider">
+  <ion-slides #quoteSlider [options]="quoteSliderOptions" [ngStyle]="{'overflow':'hidden'}">
+    <ion-slide *ngFor="let q of quotes">
+      <p class="insp-quote" [innerHTML]="q.text"></p>
+      <hr class="quote-separator">
+      <p class="insp-author">
+        {{q.author}}
+      </p>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

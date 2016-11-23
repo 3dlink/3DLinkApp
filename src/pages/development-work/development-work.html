@@ -1,0 +1,35 @@
+<!--
+  Generated template for the DevelopmentWork page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	<ion-navbar>
+		<ion-title>Development</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<div id="development_cont" class="carousel-container3 animated">
+		<ion-slides id="nav_team" class="slider-nav" #workSlider [options]="workSliderOptions">
+			<ion-slide class="item" *ngFor="let work of works">
+				<p class="sel-title">
+					<strong>
+					<a [href]="work.url" [target]="_blank" tabindex="0">{{work.name}}</a>
+					</strong>
+				</p>
+				<hr class="bluebar">
+				<div class="img-square" [ngStyle]="{'background-image': 'url(files/'+work.img1+')'}">
+				</div>
+				<div class="img-square fRight" [ngStyle]="{'background-image': 'url(files/'+work.img2+')'}">
+				</div>
+				<div class="img-square" [ngStyle]="{'background-image': 'url(files/'+work.img3+')'}">
+				</div>
+				<div class="img-square fRight" [ngStyle]="{'background-image': 'url(files/'+work.img4+')'}">
+				</div>
+			</ion-slide>
+		</ion-slides>
+	</div>
+</ion-content>
