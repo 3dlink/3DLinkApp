@@ -189,15 +189,15 @@ body{
 }
 
 .toolbar-background{
-	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 1);
 }
 
 .menu-content{
-	background: rgb(0,0,0);
+	background: white;
 }
 
 .menu-button{
-	background: rgba(0,0,0,0.5);
+	// background: rgba(0,0,0,0.5);
 	color: white;
   font-style: italic;
 }
@@ -216,6 +216,7 @@ body{
 
 ion-header ion-title .toolbar-title-md{
 	color: #00deec !important;
+  font-family: Exo2-RegularCondensed;
 }
 
 .bar-button-default-md, .bar-button-default-md:hover:not(.disable-hover){
@@ -223,7 +224,16 @@ ion-header ion-title .toolbar-title-md{
 }
 
 .contact-us{
-	background: url('../img/contact-backg.png') no-repeat;
+	background: url('../img/drawable-land-hdpi-screen.png') no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  margin-top: 56px;
+}
+
+.contact-us > .fixed-content{
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 0 !important;
 }
 
 .dev1 {
@@ -567,7 +577,6 @@ p {
   text-align: center;
   font-size: 20px;
   font-style: italic;
-  color: white;
 
   @media(max-width: 980px){
     font-size: 15px;
@@ -584,7 +593,7 @@ p {
   position: relative;
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 80px;
+  // margin-top: 80px;
 
   @media(max-width:900px){
     padding-left: 5%;
@@ -658,7 +667,7 @@ strong, b {
 }
 
 .swiper-pagination-bullet{
-  background-color: white !important;
+  background-color: #00deec;
 }
 
 .alert-wrapper{
@@ -743,6 +752,10 @@ strong, b {
   }
   @media(max-width:480px){
     width: 150px;
+  }
+  @media(max-width:360px){
+    width: 122px;
+    font-size: 13px;
   }
 }
 
@@ -838,3 +851,11 @@ hr {
 }
 
 @media(max-width:){}
+
+.content-md {
+  color: #333;
+}
+
+.menu-content > .scroll-content{
+  background: rgba(0, 0, 0, 1);
+}

@@ -16,7 +16,7 @@
 <ion-content padding>
 	<div id="meet_the_team" class="animated">
       <ion-slides id="nav_team" class="slider-nav" #teamSlider [options]="teamSliderOptions">
-          <ion-slide *ngFor="let p of personal" class="team-img" [ngStyle]="{'background': 'url(files/' + p.img + ') no-repeat', 'height': '145px', 'background-position': 'center'}">
+          <ion-slide *ngFor="let p of personal" class="team-img" [ngStyle]="{'background': 'url(files/' + p.Personal.photo + ') no-repeat', 'height': '145px', 'background-position': 'center'}">
               <div class="mask"></div>
           </ion-slide>
       </ion-slides>

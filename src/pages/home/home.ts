@@ -1,7 +1,7 @@
 import { Component, ViewChild, Injectable } from '@angular/core';
 import { NavController, Slides } from 'ionic-angular';
 import { Http, Response } from '@angular/http';
-import { Observable } from 'rxjs/Rx';
+// import { Observable } from 'rxjs/Rx';
 // import 'rxjs/add/operator/map';
 // import 'rxjs/add/operator/catch';
 
